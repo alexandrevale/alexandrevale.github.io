@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script');
+.logo{
+    
+}
+/*Jumbotron*/
+.jumbotron{
+    background-image: url("../bg.JPG");
+    background-repeat: no-repeat;
+    color: #fff;
+    height: 800px;
+}
+.jumbotron h1{
+    font-family: 'Kaushan Script', cursive;
+    color: #BF1915;
+}
+.jumbotron span{
+    color: #F1B802;
+    font-size: 1.5em;
+}
+.jumbotron{
+    text-align: center;
+}
