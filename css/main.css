@@ -1,17 +1,23 @@
 @import url('https://fonts.googleapis.com/css?family=Kaushan+Script');
+body{
+    margin-top: 70px;
+}
 .logo{
-    
+    width: 80%;
+}
+.background{
+    background-image: url("../bg.JPG");
+    background-repeat: no-repeat; 
 }
 /*Jumbotron*/
 .jumbotron{
-    background-image: url("../bg.JPG");
-    background-repeat: no-repeat;
+    background: transparent;
     color: #fff;
     height: 800px;
 }
 .jumbotron h1{
     font-family: 'Kaushan Script', cursive;
-    color: #BF1915;
+    color: #9b59b6;
 }
 .jumbotron span{
     color: #F1B802;
@@ -19,4 +25,32 @@
 }
 .jumbotron{
     text-align: center;
+}
+/*Menu*/
+.navbar{
+    background: transparent;
+    border-bottom: transparent 3px solid;
+}
+.navbar.alterarMenu{
+    background: #000;
+    transition: all ease .5s;
+}
+.nav{
+    padding-top: 30px;
+    transition: all ease .5s;
+}
+.nav li:hover:nth-child(5n+1), .nav li.active:nth-child(5n+1){
+    border-bottom: #f1c40f 3px solid;
+}
+.nav li:hover:nth-child(5n+2), .nav li.active:nth-child(5n+2){
+    border-bottom: #e67e22 3px solid;
+}
+.nav li:hover:nth-child(5n+3), .nav li.active:nth-child(5n+3){
+    border-bottom: #e74c3c 3px solid;
+}
+.nav li:hover:nth-child(5n+4), .nav li.active:nth-child(5n+4){
+    border-bottom: #9b59b6 3px solid;
+}
+.nav li:hover:nth-child(5n+5), .nav li.active:nth-child(5n+5){
+    border-bottom: #34495e 3px solid;
 }
