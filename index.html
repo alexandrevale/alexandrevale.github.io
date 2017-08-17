@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="../../favicon.ico">
-    <title>Alexandre do Vale - Portfólio e Currículo Vitae</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/main.css" rel="stylesheet">
-
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="../../favicon.ico">
+        <title>Alexandre do Vale - Portfólio e Currículo Vitae</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/bootstrap-social.css" rel="stylesheet">
+        <link href="css/font-awesome.css" rel="stylesheet">
+        <link href="css/main.css" rel="stylesheet">
     </head>
     <body class="bg">
         <nav class="navbar navbar-default navbar-inverse navbar-fixed-top">
@@ -32,15 +33,15 @@
             </div>
         </nav>
 
-        <div class="jumbotron" id="curriculo">
+        <section class="jumbotron" id="curriculo">
             <div class="container">
                 <div class="row text-center">
                     <h1>Bem vindo ao meu currículo & portfólio :)</h1>
                     <p>Desenvolvedor web com experiência em implementar, desenvolver e treinar equipes em CMS, LMS, CRM. </p>
                 </div>
                 <div class="container">
-                    <div class="row">
-                        <div class="col-md-offset-1 col-md-5  col-xs-12">
+                    <div class="row text-center">
+                        <div class="col-md-offset-1 col-md-4  col-xs-12">
                             <h2>Hard & Soft Skills</h2>
                             <h3>Gestão</h3><p>SCRUM, Design Thinking, Design Splint</p>
                             <span class="glyphicon glyphicon-star"></span>
@@ -60,17 +61,19 @@
                             <span class="glyphicon glyphicon glyphicon-star"></span>
                             <span class="glyphicon glyphicon glyphicon-star-empty"></span>
                             <span class="glyphicon glyphicon glyphicon-star-empty"></span>
-                            <h2>Experiência</h2>                   
+                            <h2>Experiência</h2>
+                            <a class="btn btn-block btn-social btn-linkedin" href="https://www.linkedin.com/in/alexdovale/" target="_blank">Confira meu perfil completo no Linked In</a>
                         </div>
                         <div class="col-md-offset-2 col-md-4 col-xs-12">
                             <h2>Dica de Leitura</h2>
-                            <p>Acompanhe meus resumos e </p>
-                            <img class="giz" src="img/livros/scrum-a-arte.jpg" alt="" class="img-responsive">
+                            <div id="dica-livro" class="text-center"></div>
+                            <p>Quer saber quais aprendizados observei na obra?</p>
+                            <a class="btn btn-block btn-social btn-reddit" href="https://medium.com/@alexandredovale" target="_blank">Leia as análises no meu blog no Medium</a>
                         </div>                     
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
         <section class="container" id="portfolio">
             <div class="row">
                 <h2 class="text-center">Projetos Desenvolvidos</h2>
@@ -103,7 +106,7 @@
                     <h3>Me siga nas Redes Sociais</h3>
                     <ul>
                         <li>Linkedin</li>
-                        <li>Github</li>
+                        <li><a class="btn btn-block btn-social btn-github"><span class="fa fa-github"></span>Github</a></li>
                         <li>Medium</li>
                         <li>Facebook</li>
                     </ul>

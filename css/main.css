@@ -2,11 +2,6 @@
 body{
     margin-top: 70px;
 }
-.navbar-brand{
-    width: 80%;
-    margin: 0;
-    padding: 0;
-}
 .bg{
     background-image: url("../bg.JPG");
     background-repeat: no-repeat; 
@@ -15,7 +10,7 @@ body{
 .jumbotron{
     background: transparent;
     color: #fff;
-    height: 800px;
+    height: auto;
 }
 .jumbotron h1{
     font-size: 2em;
@@ -39,11 +34,12 @@ h2~span{
     margin: 0;
     padding-top: 30px;  
 }
-.giz{
-    padding-top: 50px;
-    width: 60%;
-}
 /*Menu*/
+.navbar-brand{
+    width: 80%;
+    margin: 0;
+    padding: 0;
+}
 .navbar{
     background: transparent;
     border-bottom: none;
@@ -64,3 +60,19 @@ h2~span{
     color: #FF8420;
     transition: all ease-in .5s;
 }
+/*Dica de Livro*/
+.dica-efeito{
+    -webkit-animation: fade-in 1s ease;
+    -moz-animation: fade-in ease-in-out 1s both;
+    -ms-animation: fade-in ease-in-out 1s both;
+    -o-animation: fade-in ease-in-out 1s both;
+    animation: fade-in 1s ease;
+    visibility: visible;
+    -webkit-backface-visibility: hidden;
+    margin: 0 auto;
+    width: 75%;
+}
+@-webkit-keyframes fade-in{0%{opacity:0;} 100%{opacity:1;}}
+@-moz-keyframes fade-in{0%{opacity:0} 100%{opacity:1}}
+@-o-keyframes fade-in{0%{opacity:0} 100%{opacity:1}}
+@keyframes fade-in{0%{opacity:0} 100%{opacity:1}}
