@@ -2,8 +2,10 @@
 body{
     margin-top: 70px;
 }
-.logo{
+.navbar-brand{
     width: 80%;
+    margin: 0;
+    padding: 0;
 }
 .bg{
     background-image: url("../bg.JPG");
@@ -16,44 +18,49 @@ body{
     height: 800px;
 }
 .jumbotron h1{
-    font-family: 'Kaushan Script', cursive;
-    color: #9b59b6;
+    font-size: 2em;
 }
-.jumbotron span{
+.jumbotron p{
+    color: #fff;
+    margin: 0;
+    padding: 10px 0;
+    font-size: 1em;
+}
+.jumbotron h2{
+    padding-top: 20px;
+}
+h2~span{
     color: #F1B802;
     font-size: 1.5em;
+    margin: 0;
+    padding: 0;
 }
-.jumbotron{
-    text-align: center;
+.jumbotron h3{
+    margin: 0;
+    padding-top: 30px;  
+}
+.giz{
+    padding-top: 50px;
+    width: 60%;
 }
 /*Menu*/
 .navbar{
-    
     background: transparent;
-    border-bottom: transparent 3px solid;
+    border-bottom: none;
+    padding: 10px 0;
+    transition: all ease-in .5s;
 }
 .navbar.alterarMenu{
-    background: #000;
-    transition: all ease .5s;
+    background: #fff;
+    transition: all ease-in .5s;
 }
 .nav{
     color: #fff;
-    font-size: 1.2em;
-    padding-top: 30px;
-    transition: all ease .5s;
+    font-size: 1.5em;
+    transition: all ease-in .5s;
+    border-bottom: none;
 }
-.nav li:hover:nth-child(5n+1), .nav li.active:nth-child(5n+1){
-    border-bottom: #f1c40f 3px solid;
-}
-.nav li:hover:nth-child(5n+2), .nav li.active:nth-child(5n+2){
-    border-bottom: #e67e22 3px solid;
-}
-.nav li:hover:nth-child(5n+3), .nav li.active:nth-child(5n+3){
-    border-bottom: #e74c3c 3px solid;
-}
-.nav li:hover:nth-child(5n+4), .nav li.active:nth-child(5n+4){
-    border-bottom: #9b59b6 3px solid;
-}
-.nav li:hover:nth-child(5n+5), .nav li.active:nth-child(5n+5){
-    border-bottom: #34495e 3px solid;
+.navbar-inverse .navbar-nav>li>a{
+    color: #FF8420;
+    transition: all ease-in .5s;
 }
