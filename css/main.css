@@ -1,38 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Kaushan+Script');
 body{
-    margin-top: 70px;
+    padding-top: 70px;
 }
 .bg{
     background-image: url("../bg.JPG");
-    background-repeat: no-repeat; 
-}
-/*Jumbotron*/
-.jumbotron{
-    background: transparent;
-    color: #fff;
-    height: auto;
-}
-.jumbotron h1{
-    font-size: 2em;
-}
-.jumbotron p{
-    color: #fff;
-    margin: 0;
-    padding: 10px 0;
-    font-size: 1em;
-}
-.jumbotron h2{
-    padding-top: 20px;
-}
-h2~span{
-    color: #F1B802;
-    font-size: 1.5em;
-    margin: 0;
-    padding: 0;
-}
-.jumbotron h3{
-    margin: 0;
-    padding-top: 30px;  
+    background-repeat: repeat-y; 
 }
 /*Menu*/
 .navbar-brand{
@@ -60,6 +32,36 @@ h2~span{
     color: #FF8420;
     transition: all ease-in .5s;
 }
+/*Jumbotron*/
+.jumbotron{
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    color: #fff;
+    height: auto;
+}
+.jumbotron h1{
+    font-size: 2em;
+}
+.jumbotron p{
+    color: #fff;
+    margin: 0;
+    padding: 10px 0;
+    font-size: 1em;
+}
+.jumbotron h2{
+    padding-top: 20px;
+}
+h2~span{
+    color: #F1B802;
+    font-size: 1.5em;
+    margin: 0;
+    padding: 0;
+}
+.jumbotron h3{
+    margin: 0;
+    padding-top: 30px;  
+}
 /*Post-it*/
 #post-it{
     padding: 15px;
@@ -80,6 +82,27 @@ p.mindset{
     font-family: 'Gloria Hallelujah', cursive; 
     font-size:15px; 
     color: #000;
+}
+/*Portfólio*/
+#portfolio{
+    padding: 70px 10%;
+    background-color: #30508a;
+    color: #fff;
+}
+#portfolio h2, #portfolio h3{
+    margin: 30px 0; 
+}
+#portfolio h4{
+    text-align: center;
+}
+#portfolio p{
+    text-align: justify;
+    margin-bottom: 30px;
+} 
+/*Conteúdos*/
+#conteudos{
+    background-color: #000;
+    
 }
 /*Dica de Livro*/
 .dica-efeito{
