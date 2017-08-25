@@ -72,7 +72,7 @@
             </div>
         </section>
         <section class="container-fluid" id="portfolio">
-            <h2 class="text-center">Potfólio</h2>
+            <h2 class="text-center">Portfólio</h2>
             <h3 class="text-center">Shopping das Águas</h3>
             <div id="first-slider">
                 <div id="carousel-example-generic" class="carousel slide carousel-fade">
@@ -212,7 +212,29 @@
                         <div class="messages"></div>
                         <div class="controls">
                             <div class="row">
- 
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="form_name">Nome *</label>
+                                        <input id="form_name" type="text" name="nome" class="form-control" required="required" data-error="Campo obrigatório.">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="form_email">E-mail *</label>
+                                        <input id="form_email" type="email" name="email" class="form-control" required="required" data-error="Campo obrigatório.">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label for="form_message">Mensagem *</label>
+                                        <textarea id="form_message" name="mensagem" class="form-control" rows="6" required="required" data-error="Campo obrigatório"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <input type="submit" class="btn btn-success btn-send" value="Enviar">
+                                </div>
                             </div>
                         </div>
                     </form>
@@ -220,6 +242,7 @@
             </div>
         </section>
         <footer>
+            
         </footer>
 
 

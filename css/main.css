@@ -136,4 +136,8 @@ p.mindset {
     -webkit-backface-visibility: hidden;
     margin: 0 auto;
     width: 75%; 
-};
+}
+footer{
+    background-color: #000;
+    height: 20px;
+}
