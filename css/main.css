@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Kaushan+Script");
 section {
-    padding: 100px 0; 
+    padding: 70px 0; 
 }
 
 .bg {
@@ -124,20 +124,30 @@ p.mindset {
 	border-radius: 25px;
 }
 /*slider*/
-#portfolio img {
-    
-}
 .carousel-control{
     opacity: 1;
     width: 5%;
     font-size: 3em;
     z-index:200;
-    top:40%;
+    top:50%;
     opacity:1.5;
 }
-.right, .left{
-   
+.mockup, .case{
+    margin: 0 auto;
 }
+.mockup{
+    position:relative;
+    height: 400px;
+}
+.case{
+    position:absolute;
+    width: 490px;
+    height: 290px;
+    border: 20px solid;
+    border-color: transparent;
+    margin-left: 45px;
+}
+
 /*Conteúdos*/
 #conteudos {
     display: none;
