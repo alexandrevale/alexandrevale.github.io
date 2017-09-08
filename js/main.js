@@ -34,9 +34,26 @@ $(document).ready(function() {
     var coresAleatorias = coresPostit[Math.floor(Math.random()*coresPostit.length)];
     $('#post-it').css('background-color',coresAleatorias);
     //Uma dica a cada load
-    var imagens = ['a-chegada.JPG',
+    /*var imagens = ['a-chegada.JPG',
                    'alien-o-oitavo-passageiro.JPG',
                    'scrum-a-arte.JPG'];
     
-    $('<img class="dica-efeito img-responsive" src="img/livros/'+imagens[Math.floor(Math.random()*imagens.length)]+'">').appendTo('#dica-livro');
+    $('<img class="dica-efeito img-responsive" src="img/livros/'+imagens[Math.floor(Math.random()*imagens.length)]+'">').appendTo('#dica-livro');*/
+    //Ajuste no carousel
+    $('#caseCarousel').carousel({
+        keyboard:true,
+        interval:false
+    });
+    $(document).keydown(function(e) {
+        if (e.keyCode === 37) {
+           // Previous
+           $(".carousel-control.left").click();
+           return false;
+        }
+        if (e.keyCode === 39) {
+           // Next
+           $(".carousel-control.right").click();
+           return false;
+        }
+    });
 });
