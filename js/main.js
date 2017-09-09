@@ -44,16 +44,29 @@ $(document).ready(function() {
         keyboard:true,
         interval:false
     });
-    $(document).keydown(function(e) {
-        if (e.keyCode === 37) {
-           // Previous
-           $(".carousel-control.left").click();
-           return false;
+    //Controle manual do carousel
+    $(document).keydown(function(e){
+        if(e.keyCode === 37){
+            // Previous
+            $(".carousel-control.left").click();
+            return false;
         }
-        if (e.keyCode === 39) {
-           // Next
-           $(".carousel-control.right").click();
-           return false;
+        if(e.keyCode === 39){
+            // Next
+            $(".carousel-control.right").click();
+            return false;
         }
+    });
+    //Botão top
+    $(window).scroll(function(){
+        if ($(this).scrollTop() > 200){
+            $('.top').fadeIn(200);
+        } else {
+            $('.top').fadeOut(200);
+        }
+    });
+    $('.top').click(function(event){
+        event.preventDefault();
+        $('html, body').animate({scrollTop: 0}, 300);
     });
 });
