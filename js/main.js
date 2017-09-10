@@ -69,4 +69,19 @@ $(document).ready(function() {
         event.preventDefault();
         $('html, body').animate({scrollTop: 0}, 300);
     });
+    
+    //Smooth scrolling
+    $(".navbar li a").on('click', function(e) {
+        if(this.hash !== ""){
+            e.preventDefault();
+            var hash = this.hash; //Armazena a âncora alvo
+            
+            $('html, body').animate({
+            scrollTop: $(hash).offset().top
+            }, 800, function(){
+
+            window.location.hash = hash;
+            });
+        }
+    });
 });
