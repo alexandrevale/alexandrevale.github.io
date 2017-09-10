@@ -198,3 +198,7 @@ footer{
 .top span{
     font-size: 1.2em;
 }
+label::after{
+    content: "*";
+    color: red;
+}

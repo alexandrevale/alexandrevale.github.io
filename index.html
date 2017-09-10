@@ -173,28 +173,28 @@
                 </div>
                 <div class="col-md-6">
                     <h3>Entre em contato via formulário ou <a href="mailto:vale.apv@gmail.com" target="_top">e-mail</a>  ;)</h3>
-                    <form id="contact-form" method="post" action="contact.php" role="form">
-                        <div class="messages"></div>
+                    <form id="form-contato" action="https://formspree.io/vale.apv@gmail.com" method="POST" role="form">
                         <div class="controls">
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label for="form_name">Nome *</label>
-                                        <input id="form_name" type="text" name="nome" class="form-control" required="required" data-error="Campo obrigatório.">
+                                       <input type="hidden" name="_subject" value="Novo formulário de contato"/>
+                                       <label for="form-nome">Nome </label>
+                                       <input id="form-nome" type="text" name="nome" class="form-control" required="required" data-error="Campo obrigatório.">
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label for="form_email">E-mail *</label>
-                                        <input id="form_email" type="email" name="email" class="form-control" required="required" data-error="Campo obrigatório.">
+                                       <label for="form-email">E-mail </label>
+                                       <input id="form-email" type="email" name="email" class="form-control" required="required" data-error="Campo obrigatório.">
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-md-12">
                                     <div class="form-group">
-                                        <label for="form_message">Mensagem *</label>
-                                        <textarea id="form_message" name="mensagem" class="form-control" rows="6" required="required" data-error="Campo obrigatório"></textarea>
+                                       <label for="form-mensagem">Mensagem </label>
+                                       <textarea id="form-mensagem" name="mensagem" class="form-control" rows="6" required="required" data-error="Campo obrigatório"></textarea>
                                     </div>
                                 </div>
                                 <div class="col-md-12">
@@ -203,6 +203,9 @@
                             </div>
                         </div>
                     </form>
+                    <div id="form-sucesso" style="display: none">
+                        <p>Seu formulário foi enviado com sucesso!</p>
+                    </div>
                 </div>
             </div>
         </section>
