@@ -86,30 +86,27 @@ $(document).ready(function() {
     });
 
     //Formspree via AJAX
-    $('#someForm').on('submit', function(f) {
+    $('#form-contato').on('submit', function(f) {
         f.preventDefault();
         var nome = $('#form-nome').val();
         var email = $('#form-email').val();
         var mensagem = $('#form-mensagem').val();
 
         $.ajax({
-            url:'https://formspree.io/vale.apv@gmail.com',
-            method:'POST',
+            url:"https://formspree.io/vale.apv@gmail.com",
+            method:"POST",
             data:{
                 name:nome,
                 email:email,
+                _replyto:email,
                 mensagem:mensagem,
-                _subject:'Novo formulário de contato',
             },
             dataType:"json",
-            success:function() {
-                console.log('success'); 
+            success:function(){
                 $('#form-contato').hide();
                 $('#form-sucesso').show();
             }   
-
         });     
-
     });
 
 
