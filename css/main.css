@@ -173,6 +173,9 @@ p.mindset {
 #contato{
     background-color: #fff;
 }
+.social{
+    padding: 0;
+}
 .social li{
     list-style: none;
     padding-top: 15px;
