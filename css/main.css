@@ -203,5 +203,8 @@ footer{
 }
 label::after{
     content: "*";
-    color: red;
+    color: #f00;
+}
+a[data-toggle="tooltip"]{
+    text-decoration: none;
 }
