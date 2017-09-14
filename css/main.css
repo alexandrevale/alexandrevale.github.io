@@ -58,7 +58,25 @@
         color: #FF8420;
         transition: all ease-in .5s; 
     }
-
+    /*Botão de CV em pdf*/
+    .cv {
+        border: 0;
+        background: #0087cc;
+        border-radius: 25px;
+        box-shadow: 0 5px 0 #006599;
+        color: #fff;
+        font: inherit;
+        margin: -15px 0;    
+        padding: 10px 20px;
+        transition: all .1s linear;
+    }
+    .cv:active {
+        box-shadow: 0 2px 0 #006599;
+        transform: translateY(3px);
+    }
+    li a .cv{
+        font-size: .8em;
+    }
     /*Jumbotron*/
     .jumbotron {
         margin: 0;
