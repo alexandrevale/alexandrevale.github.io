@@ -1,62 +1,51 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Kaushan+Script");
 /* Extra Small Devices, Phones */ 
-@media only screen and (min-width : 480px) {
-
-}
-
-/* Small Devices, Tablets */
-@media only screen and (min-width : 768px) {
-
-}
-
-/* Medium Devices, Desktops */
-@media only screen and (min-width : 992px) {
-
-}
-
-/* Large Devices, Wide Screens */
-@media only screen and (min-width : 1200px) {
+@media only screen and (max-width : 420px) {
     section {
         padding: 50px 0;
         font-size: 1em;
     }
-
+    .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form{
+        border: none;
+    }
     .bg {
         background-image: url("../img/bg.jpg");
-        background-repeat:repeat-x; 
+        background-repeat:repeat-y; 
         background-size: auto;
     }
-
     /*Menu*/
     .navbar-brand {
         width: 80%;
         margin: 0;
         padding: 0; 
     }
-
     .navbar {
         background: transparent;
         border-bottom: none;
         padding: 10px 0;
         transition: all ease-in .5s; 
-    }
-
-    .navbar.alterarMenu {
         background: #fff;
-        transition: all ease-in .5s; 
     }
-
     .nav {
-        color: #fff;
+        color: #000;
         font-size: 1.5em;
-        transition: all ease-in .5s;
         border-bottom: none; 
     }
-
     .navbar-inverse .navbar-nav > li > a {
         color: #FF8420;
-        transition: all ease-in .5s; 
+    }
+    .logo{
+        width: 85%;
+        padding: 0 5px;
+        margin: 0 5px;
+    }
+    .navbar-toggle, .navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
+        background: #211a9d; /* For browsers that do not support gradients */
+        background: -webkit-linear-gradient(left top, #211a9d, #ff8420); /* For Safari 5.1 to 6.0 */
+        background: -o-linear-gradient(bottom right, #211a9d, #ff8420); /* For Opera 11.1 to 12.0 */
+        background: -moz-linear-gradient(bottom right, #211a9d, #ff8420); /* For Firefox 3.6 to 15 */
+        background: linear-gradient(to bottom right, #211a9d, #ff8420); /* Standard syntax */
     }
     /*Botão de CV em pdf*/
     .cv {
@@ -66,7 +55,7 @@
         box-shadow: 0 5px 0 #006599;
         color: #fff;
         font: inherit;
-        margin: -15px 0;    
+        margin: -5px 0;    
         padding: 10px 20px;
         transition: all .1s linear;
     }
@@ -78,64 +67,43 @@
         font-size: .8em;
     }
     /*Jumbotron*/
-    .jumbotron {
+    .jumbotron{
         margin: 0;
-        padding: 100px 0;
+        padding: 70px 0;
         background: transparent;
         color: #fff;
         height: auto; 
     }
-
-    .jumbotron h1 {
+    .jumbotron h1{
         font-size: 2em; 
     }
-
-    .jumbotron p {
+    .jumbotron p{
         color: #fff;
         margin: 0;
-        padding: 10px 0;
+        padding: 5px 0;
         font-size: 1em; 
     }
-
-    .jumbotron h2 {
-        padding-top: 20px; 
+    .jumbotron h2{
+        padding-top: 10px; 
     }
-
-    h2 ~ span {
+    h2 ~ span{
         color: #F1B802;
         font-size: 1.5em;
         margin: 0;
         padding: 0; 
     }
-
-    .jumbotron h3 {
+    .jumbotron h3{
         margin: 0;
-        padding-top: 30px; 
+        padding-top: 15px; 
     }
-
     /*Post-it*/
-    #post-it {
-        padding: 15px;
-        margin-top: 50px;
-        width: 300px;
-        height: 200px;
-        -moz-transform: rotate(7deg);
-        -webkit-transform: rotate(7deg);
-        -o-transform: rotate(7deg);
-        -ms-transform: rotate(7deg);
-        transform: rotate(7deg);
-        box-shadow: 0px 4px 6px #333;
-        -moz-box-shadow: 0px 4px 6px #333;
-        -webkit-box-shadow: 0px 4px 6px #333; 
+    #post-it{
+        display: none;
     }
-
-    p.mindset {
-        vertical-align: middle;
-        font-family: 'Gloria Hallelujah', cursive;
-        font-size: 15px;
-        color: #000;
+    /*Experiência*/
+    .exp{
+        display: none;
     }
-
     /*Portfólio*/
     #portfolio {
         background: #59d;
@@ -160,7 +128,7 @@
     }
     .round {
         border-radius: 25px;
-        margin-left: 35%;
+        margin-left: 50%;
         box-sizing: border-box;
     }
     /*slider*/
@@ -245,3 +213,230 @@
     }
 }
 
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+    section {
+        padding: 50px 0;
+        font-size: 1em;
+    }
+    .bg {
+        background-image: url("../img/bg.jpg");
+        background-repeat:repeat-x; 
+        background-size: auto;
+    }
+    /*Menu*/
+    .navbar-brand {
+        width: 80%;
+        margin: 0;
+        padding: 0; 
+    }
+    .navbar {
+        background: transparent;
+        border-bottom: none;
+        padding: 10px 0;
+        transition: all ease-in .5s; 
+    }
+    .navbar.alterarMenu {
+        background: #fff;
+        transition: all ease-in .5s; 
+    }
+    .nav {
+        color: #fff;
+        font-size: 1.5em;
+        transition: all ease-in .5s;
+        border-bottom: none; 
+    }
+    .navbar-inverse .navbar-nav > li > a {
+        color: #FF8420;
+        transition: all ease-in .5s; 
+    }
+    /*Botão de CV em pdf*/
+    .cv {
+        border: 0;
+        background: #0087cc;
+        border-radius: 10px;
+        box-shadow: 0 5px 0 #006599;
+        color: #fff;
+        font: inherit;
+        margin: -15px 0;    
+        padding: 10px 20px;
+        transition: all .1s linear;
+    }
+    .cv:active {
+        box-shadow: 0 2px 0 #006599;
+        transform: translateY(3px);
+    }
+    li a .cv{
+        font-size: .8em;
+    }
+    /*Jumbotron*/
+    .jumbotron {
+        margin: 0;
+        padding: 100px 0;
+        background: transparent;
+        color: #fff;
+        height: auto; 
+    }
+    .jumbotron h1 {
+        font-size: 2em; 
+    }
+    .jumbotron p {
+        color: #fff;
+        margin: 0;
+        padding: 10px 0;
+        font-size: 1em; 
+    }
+    .jumbotron h2 {
+        padding-top: 20px; 
+    }
+    h2 ~ span {
+        color: #F1B802;
+        font-size: 1.5em;
+        margin: 0;
+        padding: 0; 
+    }
+    .jumbotron h3 {
+        margin: 0;
+        padding-top: 30px; 
+    }
+    /*Post-it*/
+    #post-it {
+        padding: 15px;
+        margin-top: 50px;
+        width: 300px;
+        height: 200px;
+        -moz-transform: rotate(7deg);
+        -webkit-transform: rotate(7deg);
+        -o-transform: rotate(7deg);
+        -ms-transform: rotate(7deg);
+        transform: rotate(7deg);
+        box-shadow: 0px 4px 6px #333;
+        -moz-box-shadow: 0px 4px 6px #333;
+        -webkit-box-shadow: 0px 4px 6px #333; 
+    }
+    p.mindset {
+        vertical-align: middle;
+        font-family: 'Gloria Hallelujah', cursive;
+        font-size: 15px;
+        color: #000;
+    }
+    /*Portfólio*/
+    #portfolio {
+        background: #59d;
+        background-image: 
+        -webkit-linear-gradient(bottom, transparent 0%, transparent 9px, rgba(255, 255, 255, 0.2) 9px, rgba(255, 255, 255, 0.2) 10px, transparent 10px, transparent 19px, rgba(255, 255, 255, 0.1) 19px, rgba(255, 255, 255, 0.1) 20px, transparent 20px, transparent 29px, rgba(255, 255, 255, 0.1) 29px, rgba(255, 255, 255, 0.1) 30px, transparent 30px, transparent 39px, rgba(255, 255, 255, 0.1) 39px, rgba(255, 255, 255, 0.1) 40px, transparent 40px, transparent 49px, rgba(255, 255, 255, 0.1) 49px, rgba(255, 255, 255, 0.1) 50px),
+        -webkit-linear-gradient(left, transparent 0%, transparent 9px, rgba(255, 255, 255, 0.2) 9px, rgba(255, 255, 255, 0.2) 10px, transparent 10px, transparent 19px, rgba(255, 255, 255, 0.1) 19px, rgba(255, 255, 255, 0.1) 20px, transparent 20px, transparent 29px, rgba(255, 255, 255, 0.1) 29px, rgba(255, 255, 255, 0.1) 30px, transparent 30px, transparent 39px, rgba(255, 255, 255, 0.1) 39px, rgba(255, 255, 255, 0.1) 40px, transparent 40px, transparent 49px, rgba(255, 255, 255, 0.1) 49px, rgba(255, 255, 255, 0.1) 50px);
+        background-size: 50px 50px;
+        color: #fff;
+        font-size: 1em;
+    }
+    #portfolio h2, #portfolio h3 {
+        margin: 30px 0;
+    }
+    #portfolio h4 {
+        text-align: center; 
+        font-weight: 700;
+    }
+    #portfolio p {
+        margin-bottom: 30px; 
+        text-align: center;
+        vertical-align: middle;
+    }
+    .round {
+        border-radius: 25px;
+        margin-left: 35%;
+        box-sizing: border-box;
+    }
+    /*slider*/
+    .carousel-control{
+        opacity: 1;
+        width: 5%;
+        font-size: 3em;
+        z-index:200;
+        top:50%;
+        opacity:1.5;
+    }
+    /*
+    .mockup, .case{
+        margin: 0 auto;
+    }
+    */
+    .mockup{
+        background-image: url("../img/mockup-pc.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 500px;
+        margin: 0 auto;
+    }
+    .case{
+        width: 100%;
+        height: 60%;
+        margin: 20px auto;
+        background-size: auto;
+    }
+    /*Conteúdos*/
+    #conteudos {
+        display: none;
+    }
+    /*Dica de Livro*/
+    .dica-efeito {
+        -webkit-animation: fade-in 1s ease;
+        -moz-animation: fade-in ease-in-out 1s both;
+        -ms-animation: fade-in ease-in-out 1s both;
+        -o-animation: fade-in ease-in-out 1s both;
+        animation: fade-in 1s ease;
+        visibility: visible;
+        -webkit-backface-visibility: hidden;
+        margin: 0 auto;
+        width: 75%; 
+    }
+    /*Contato*/
+    #contato{
+        background-color: #fff;
+    }
+    .social{
+        padding: 0;
+    }
+    .social li{
+        list-style: none;
+        padding-top: 15px;
+    }
+    footer{
+        background-color: #000;
+        height: 20px;
+    }
+    /*Botão top*/
+    .top{
+        position: fixed;
+        bottom: 2em;
+        right: 2em;
+        text-decoration: none;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.3);
+        border-radius: 50px;
+        display: none;
+        padding: 1em;
+        height: 45px;
+        width: 45px;
+    }
+    .top span{
+        font-size: 1.2em;
+    }
+    label::after{
+        content: "*";
+        color: #f00;
+    }
+    a[data-toggle="tooltip"]{
+        text-decoration: none;
+    }
+}

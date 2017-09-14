@@ -4,7 +4,6 @@ $(document).ready(function() {
         if($(document).scrollTop() > 60) {
             $('.navbar').addClass('alterarMenu');
             $('.navbar-inverse .navbar-nav>li>a').css('color','#211A9D');
-            
         }
         else {
             $('.navbar').removeClass('alterarMenu');
@@ -27,9 +26,9 @@ $(document).ready(function() {
                    'Custa caro (tempo) treinar e educar uma equipe. Isso exige muita energia e o resultado será notado em longo prazo, não é um trabalho da noite para o dia.',
                    'Liderança é um processo de criação em conjunto. Se você não se doar pela empresa sua equipe também não vai doar.',
                    'Não se pode viver com medo das possibilidades.'];
-    
+
     $('<p class="mindset">'+mindset[Math.floor(Math.random()*mindset.length)]+'</p>').appendTo('#post-it');
-    
+
     var coresPostit = ['#5DFF9E', '#fefabc', '#FFB580', '#FFA3F0', '#A9BAFF']; 
     var coresAleatorias = coresPostit[Math.floor(Math.random()*coresPostit.length)];
     $('#post-it').css('background-color',coresAleatorias);
@@ -37,7 +36,7 @@ $(document).ready(function() {
     /*var imagens = ['a-chegada.JPG',
                    'alien-o-oitavo-passageiro.JPG',
                    'scrum-a-arte.JPG'];
-    
+
     $('<img class="dica-efeito img-responsive" src="img/livros/'+imagens[Math.floor(Math.random()*imagens.length)]+'">').appendTo('#dica-livro');*/
     //Ajuste no carousel
     $('#caseCarousel').carousel({
@@ -69,13 +68,13 @@ $(document).ready(function() {
         event.preventDefault();
         $('html, body').animate({scrollTop: 0}, 300);
     });
-    
+
     //Smooth scrolling
     $(".navbar li a").on('click', function(e) {
         if(this.hash !== ""){
             e.preventDefault();
             var hash = this.hash; //Armazena a âncora alvo
-            
+
             $('html, body').animate({
             scrollTop: $(hash).offset().top
             }, 800, function(){
@@ -109,5 +108,5 @@ $(document).ready(function() {
         });     
     });
 
-    $('[data-toggle="tooltip"]').tooltip(); 
+    $('[data-toggle="tooltip"]').tooltip();
 });
