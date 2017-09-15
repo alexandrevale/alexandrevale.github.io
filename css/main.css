@@ -36,7 +36,7 @@
         color: #FF8420;
     }
     .logo{
-        width: 85%;
+        width: 75%;
         padding: 0 5px;
         margin: 0 5px;
     }
@@ -279,6 +279,13 @@
     li a .cv{
         font-size: .8em;
     }
+    h2{
+        margin: 30px;
+        
+    }
+    h2::before{
+        content: url(../img/mini.png);
+    }
     /*Jumbotron*/
     .jumbotron {
         margin: 0;
@@ -295,9 +302,6 @@
         margin: 0;
         padding: 10px 0;
         font-size: 1em; 
-    }
-    .jumbotron h2 {
-        padding-top: 20px; 
     }
     h2 ~ span {
         color: #F1B802;
@@ -332,7 +336,7 @@
     }
     /*Portfólio*/
     #portfolio {
-        background: #59d;
+        background: #0b609c;
         background-image: 
         -webkit-linear-gradient(bottom, transparent 0%, transparent 9px, rgba(255, 255, 255, 0.2) 9px, rgba(255, 255, 255, 0.2) 10px, transparent 10px, transparent 19px, rgba(255, 255, 255, 0.1) 19px, rgba(255, 255, 255, 0.1) 20px, transparent 20px, transparent 29px, rgba(255, 255, 255, 0.1) 29px, rgba(255, 255, 255, 0.1) 30px, transparent 30px, transparent 39px, rgba(255, 255, 255, 0.1) 39px, rgba(255, 255, 255, 0.1) 40px, transparent 40px, transparent 49px, rgba(255, 255, 255, 0.1) 49px, rgba(255, 255, 255, 0.1) 50px),
         -webkit-linear-gradient(left, transparent 0%, transparent 9px, rgba(255, 255, 255, 0.2) 9px, rgba(255, 255, 255, 0.2) 10px, transparent 10px, transparent 19px, rgba(255, 255, 255, 0.1) 19px, rgba(255, 255, 255, 0.1) 20px, transparent 20px, transparent 29px, rgba(255, 255, 255, 0.1) 29px, rgba(255, 255, 255, 0.1) 30px, transparent 30px, transparent 39px, rgba(255, 255, 255, 0.1) 39px, rgba(255, 255, 255, 0.1) 40px, transparent 40px, transparent 49px, rgba(255, 255, 255, 0.1) 49px, rgba(255, 255, 255, 0.1) 50px);
@@ -340,16 +344,13 @@
         color: #fff;
         font-size: 1em;
     }
-    #portfolio h2, #portfolio h3 {
-        margin: 30px 0;
-    }
-    #portfolio h4 {
-        text-align: center; 
-        font-weight: 700;
+    #portfolio h3{
+        text-align: left;
+        margin: 30px 0 0 0;
     }
     #portfolio p {
         margin-bottom: 30px; 
-        text-align: center;
+        text-align: left;
         vertical-align: middle;
     }
     .round {
@@ -366,11 +367,6 @@
         top:50%;
         opacity:1.5;
     }
-    /*
-    .mockup, .case{
-        margin: 0 auto;
-    }
-    */
     .mockup{
         background-image: url("../img/mockup-pc.png");
         background-repeat: no-repeat;
