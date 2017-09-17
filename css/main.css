@@ -1,7 +1,15 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css?family=Kaushan+Script");
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Slabo+27px');
+h2,h3{
+    font-family: 'Slabo 27px', serif;
+}
+p, label{
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.8em;
+}
 /* Extra Small Devices, Phones */ 
-@media only screen and (max-width : 420px) {
+@media only screen and (max-width : 420px){
     section {
         padding: 50px 0;
         font-size: 1em;
@@ -46,25 +54,6 @@
         background: -o-linear-gradient(bottom right, #211a9d, #ff8420); /* For Opera 11.1 to 12.0 */
         background: -moz-linear-gradient(bottom right, #211a9d, #ff8420); /* For Firefox 3.6 to 15 */
         background: linear-gradient(to bottom right, #211a9d, #ff8420); /* Standard syntax */
-    }
-    /*Botão de CV em pdf*/
-    .cv {
-        border: 0;
-        background: #0087cc;
-        border-radius: 25px;
-        box-shadow: 0 5px 0 #006599;
-        color: #fff;
-        font: inherit;
-        margin: -5px 0;    
-        padding: 10px 20px;
-        transition: all .1s linear;
-    }
-    .cv:active {
-        box-shadow: 0 2px 0 #006599;
-        transform: translateY(3px);
-    }
-    li a .cv{
-        font-size: .8em;
     }
     /*Jumbotron*/
     .jumbotron{
@@ -246,7 +235,7 @@
         padding: 10px 0;
         transition: all ease-in .5s; 
     }
-    .navbar.alterarMenu {
+    .alterarMenu {
         background: #fff;
         transition: all ease-in .5s; 
     }
@@ -256,69 +245,36 @@
         transition: all ease-in .5s;
         border-bottom: none; 
     }
-    .navbar-inverse .navbar-nav > li > a {
+    .navbar-inverse .navbar-nav > li > .menu {
         color: #FF8420;
         transition: all ease-in .5s; 
     }
-    /*Botão de CV em pdf*/
-    .cv {
-        border: 0;
-        background: #0087cc;
-        border-radius: 10px;
-        box-shadow: 0 5px 0 #006599;
-        color: #fff;
-        font: inherit;
-        margin: -15px 0;    
-        padding: 10px 20px;
-        transition: all .1s linear;
-    }
-    .cv:active {
-        box-shadow: 0 2px 0 #006599;
-        transform: translateY(3px);
-    }
-    li a .cv{
-        font-size: .8em;
+    .pull-right{
+        padding: 10px 50px;
     }
     h2{
-        margin: 30px;
-        
-    }
-    h2::before{
-        content: url(../img/mini.png);
+        margin-left: 30px;
+        font-weight: 700;
+        letter-spacing: 1px;
     }
     /*Jumbotron*/
-    .jumbotron {
+    .jumbotron{
         margin: 0;
-        padding: 100px 0;
+        padding: 100px 0 50px 0;
         background: transparent;
-        color: #fff;
-        height: auto; 
+        color: #fff; 
     }
-    .jumbotron h1 {
-        font-size: 2em; 
-    }
-    .jumbotron p {
+    .jumbotron p{
         color: #fff;
-        margin: 0;
-        padding: 10px 0;
+        margin-left: 30px;
+        padding: 5px 0;
         font-size: 1em; 
     }
-    h2 ~ span {
-        color: #F1B802;
-        font-size: 1.5em;
-        margin: 0;
-        padding: 0; 
-    }
-    .jumbotron h3 {
-        margin: 0;
-        padding-top: 30px; 
-    }
     /*Post-it*/
-    #post-it {
-        padding: 15px;
-        margin-top: 50px;
+    #post-it{
+        padding: 15px;        
         width: 300px;
-        height: 200px;
+        height: 230px;
         -moz-transform: rotate(7deg);
         -webkit-transform: rotate(7deg);
         -o-transform: rotate(7deg);
@@ -328,14 +284,20 @@
         -moz-box-shadow: 0px 4px 6px #333;
         -webkit-box-shadow: 0px 4px 6px #333; 
     }
-    p.mindset {
-        vertical-align: middle;
-        font-family: 'Gloria Hallelujah', cursive;
+    p.mindset{
+        margin-left: 0;
         font-size: 15px;
         color: #000;
     }
+    #contato{
+        color: #fff;
+        margin-left: 30px;
+    }
+    #contato .btn-success{
+        margin-top: 30px;
+    }
     /*Portfólio*/
-    #portfolio {
+    #portfolio{
         background: #0b609c;
         background-image: 
         -webkit-linear-gradient(bottom, transparent 0%, transparent 9px, rgba(255, 255, 255, 0.2) 9px, rgba(255, 255, 255, 0.2) 10px, transparent 10px, transparent 19px, rgba(255, 255, 255, 0.1) 19px, rgba(255, 255, 255, 0.1) 20px, transparent 20px, transparent 29px, rgba(255, 255, 255, 0.1) 29px, rgba(255, 255, 255, 0.1) 30px, transparent 30px, transparent 39px, rgba(255, 255, 255, 0.1) 39px, rgba(255, 255, 255, 0.1) 40px, transparent 40px, transparent 49px, rgba(255, 255, 255, 0.1) 49px, rgba(255, 255, 255, 0.1) 50px),
@@ -343,6 +305,10 @@
         background-size: 50px 50px;
         color: #fff;
         font-size: 1em;
+        height: 800px;
+    }
+    .logo-case{
+        padding: 30px 0;        
     }
     #portfolio h3{
         text-align: left;
@@ -353,19 +319,12 @@
         text-align: left;
         vertical-align: middle;
     }
-    .round {
-        border-radius: 25px;
-        margin-left: 35%;
-        box-sizing: border-box;
-    }
     /*slider*/
     .carousel-control{
         opacity: 1;
         width: 5%;
-        font-size: 3em;
-        z-index:200;
-        top:50%;
-        opacity:1.5;
+        font-size: 3em;    
+        padding-top:25%;
     }
     .mockup{
         background-image: url("../img/mockup-pc.png");
@@ -380,44 +339,13 @@
         margin: 20px auto;
         background-size: auto;
     }
-    /*Conteúdos*/
-    #conteudos {
-        display: none;
-    }
-    /*Dica de Livro*/
-    .dica-efeito {
-        -webkit-animation: fade-in 1s ease;
-        -moz-animation: fade-in ease-in-out 1s both;
-        -ms-animation: fade-in ease-in-out 1s both;
-        -o-animation: fade-in ease-in-out 1s both;
-        animation: fade-in 1s ease;
-        visibility: visible;
-        -webkit-backface-visibility: hidden;
-        margin: 0 auto;
-        width: 75%; 
-    }
-    /*Contato*/
-    #contato{
-        background-color: #fff;
-    }
-    .social{
-        padding: 0;
-    }
-    .social li{
-        list-style: none;
-        padding-top: 15px;
-    }
-    footer{
-        background-color: #000;
-        height: 20px;
-    }
     /*Botão top*/
     .top{
         position: fixed;
         bottom: 2em;
         right: 2em;
         text-decoration: none;
-        color: white;
+        color: #fff;
         background-color: rgba(0, 0, 0, 0.3);
         border-radius: 50px;
         display: none;
@@ -431,8 +359,5 @@
     label::after{
         content: "*";
         color: #f00;
-    }
-    a[data-toggle="tooltip"]{
-        text-decoration: none;
     }
 }

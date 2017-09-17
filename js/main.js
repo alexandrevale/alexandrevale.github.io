@@ -3,11 +3,11 @@ $(document).ready(function() {
     $(window).scroll(function() {
         if($(document).scrollTop() > 60) {
             $('.navbar').addClass('alterarMenu');
-            $('.navbar-inverse .navbar-nav>li>a').css('color','#211A9D');
+            $('.menu').css('color','#211A9D');
         }
         else {
             $('.navbar').removeClass('alterarMenu');
-            $('.navbar-inverse .navbar-nav>li>a').css('color','#FF8420');
+            $('.menu').css('color','#FF8420');
         }
     });
     //Um novo mindset a cada load
@@ -22,7 +22,7 @@ $(document).ready(function() {
                    'Design Thinking = Arte + Ciência + Tecnologia',
                    'Não "ache”, tenha certeza, pois maneiras subjetivas são barreiras para uma conversa construtivas.',
                    '"Existem dias que mudam totalmente a sua vida." Entender e aceitar o tempo, quando digo sim para algo estou dizendo não para outras possibilidades.',
-                   'A essência precede a existência, isto é, um gato não tem opção de não ser um gato, ele já nasce com preceitos definidos. O ser humano é uma tela em branco, podemos ser primais, selvagens ou extremamente civilizados e evoluídos tecnologicamente e espiritualmente.',
+                   'A essência precede a existência, isto é, um gato não tem opção de não ser um gato, ele já nasce com preceitos definidos. O ser humano é uma tela em branco, podemos ser primais ou extremamente evoluídos tecnologicamente e espiritualmente.',
                    'Custa caro (tempo) treinar e educar uma equipe. Isso exige muita energia e o resultado será notado em longo prazo, não é um trabalho da noite para o dia.',
                    'Liderança é um processo de criação em conjunto. Se você não se doar pela empresa sua equipe também não vai doar.',
                    'Não se pode viver com medo das possibilidades.'];
