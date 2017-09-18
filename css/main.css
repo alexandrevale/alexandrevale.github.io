@@ -8,57 +8,44 @@ p, label{
     font-family: 'Raleway', sans-serif;
     line-height: 1.8em;
 }
-/* Extra Small Devices, Phones */ 
+/* Phones */ 
 @media only screen and (max-width : 420px){
-    section {
-        padding: 50px 0;
+    section{
+        padding: 35px 0;
         font-size: 1em;
     }
-    .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form{
-        border: none;
-    }
-    .bg {
+    .bg{
         background-image: url("../img/bg.jpg");
         background-repeat:repeat-y; 
         background-size: auto;
     }
     /*Menu*/
-    .navbar-brand {
-        width: 80%;
+    .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form{
+        border: none;
+    }    
+    .redes-sociais{       
+        position: static;
+        margin: 5px 15px;
+        padding: 0 15%;
+        display: inline;
+    }    
+    .navbar-brand{
+        width: 100%;
         margin: 0;
         padding: 0; 
     }
-    .navbar {
-        background: transparent;
-        border-bottom: none;
-        padding: 10px 0;
-        transition: all ease-in .5s; 
+    .navbar{
         background: #fff;
-    }
-    .nav {
-        color: #000;
-        font-size: 1.5em;
-        border-bottom: none; 
-    }
-    .navbar-inverse .navbar-nav > li > a {
-        color: #FF8420;
+        border-bottom: none;
+        padding: 15px 0;
     }
     .logo{
-        width: 75%;
-        padding: 0 5px;
-        margin: 0 5px;
-    }
-    .navbar-toggle, .navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
-        background: #211a9d; /* For browsers that do not support gradients */
-        background: -webkit-linear-gradient(left top, #211a9d, #ff8420); /* For Safari 5.1 to 6.0 */
-        background: -o-linear-gradient(bottom right, #211a9d, #ff8420); /* For Opera 11.1 to 12.0 */
-        background: -moz-linear-gradient(bottom right, #211a9d, #ff8420); /* For Firefox 3.6 to 15 */
-        background: linear-gradient(to bottom right, #211a9d, #ff8420); /* Standard syntax */
+        width: 50%;
+        margin: 0 auto;
     }
     /*Jumbotron*/
     .jumbotron{
-        margin: 0;
-        padding: 70px 0;
+        margin: 70px 0 0 0;
         background: transparent;
         color: #fff;
         height: auto; 
@@ -75,12 +62,6 @@ p, label{
     .jumbotron h2{
         padding-top: 10px; 
     }
-    h2 ~ span{
-        color: #F1B802;
-        font-size: 1.5em;
-        margin: 0;
-        padding: 0; 
-    }
     .jumbotron h3{
         margin: 0;
         padding-top: 15px; 
@@ -89,92 +70,41 @@ p, label{
     #post-it{
         display: none;
     }
-    /*Experiência*/
-    .exp{
-        display: none;
+    #contato{
+        background: transparent;
+        color: #fff;
+    }
+    #contato .btn-success{
+        margin-top: 10px;
+        width: 100%;
     }
     /*Portfólio*/
     #portfolio {
-        background: #59d;
+        background: #08328a;
         background-image: 
         -webkit-linear-gradient(bottom, transparent 0%, transparent 9px, rgba(255, 255, 255, 0.2) 9px, rgba(255, 255, 255, 0.2) 10px, transparent 10px, transparent 19px, rgba(255, 255, 255, 0.1) 19px, rgba(255, 255, 255, 0.1) 20px, transparent 20px, transparent 29px, rgba(255, 255, 255, 0.1) 29px, rgba(255, 255, 255, 0.1) 30px, transparent 30px, transparent 39px, rgba(255, 255, 255, 0.1) 39px, rgba(255, 255, 255, 0.1) 40px, transparent 40px, transparent 49px, rgba(255, 255, 255, 0.1) 49px, rgba(255, 255, 255, 0.1) 50px),
         -webkit-linear-gradient(left, transparent 0%, transparent 9px, rgba(255, 255, 255, 0.2) 9px, rgba(255, 255, 255, 0.2) 10px, transparent 10px, transparent 19px, rgba(255, 255, 255, 0.1) 19px, rgba(255, 255, 255, 0.1) 20px, transparent 20px, transparent 29px, rgba(255, 255, 255, 0.1) 29px, rgba(255, 255, 255, 0.1) 30px, transparent 30px, transparent 39px, rgba(255, 255, 255, 0.1) 39px, rgba(255, 255, 255, 0.1) 40px, transparent 40px, transparent 49px, rgba(255, 255, 255, 0.1) 49px, rgba(255, 255, 255, 0.1) 50px);
         background-size: 50px 50px;
         color: #fff;
-        font-size: 1em;
     }
-    #portfolio h2, #portfolio h3 {
-        margin: 30px 0;
-    }
-    #portfolio h4 {
-        text-align: center; 
-        font-weight: 700;
-    }
-    #portfolio p {
-        margin-bottom: 30px; 
-        text-align: center;
-        vertical-align: middle;
-    }
-    .round {
-        border-radius: 25px;
-        margin-left: 50%;
-        box-sizing: border-box;
+    #portfolio h2, #portfolio h3, #portfolio p {
+        margin: 15px 10px;
     }
     /*slider*/
     .carousel-control{
         opacity: 1;
-        width: 5%;
-        font-size: 3em;
-        z-index:200;
-        top:50%;
-        opacity:1.5;
+        font-size: 2em;        
+        padding-top:100%;
     }
-    /* .mockup, .case{
-        margin: 0 auto;
-    } */
-    .mockup{
-        background-image: url("../img/mockup-pc.png");
-        background-repeat: no-repeat;
-        background-size: contain;
-        height: 500px;
-        margin: 0 auto;
+    .mockup, .case{
+        display: none;        
     }
-    .case{
+    .logo-case{
+        padding: 5% 30%;
+    } 
+    .btn-info{
+        margin-bottom: 50px;
         width: 100%;
-        height: 60%;
-        margin: 20px auto;
-        background-size: auto;
-    }
-    /*Conteúdos*/
-    #conteudos {
-        display: none;
-    }
-    /*Dica de Livro*/
-    .dica-efeito {
-        -webkit-animation: fade-in 1s ease;
-        -moz-animation: fade-in ease-in-out 1s both;
-        -ms-animation: fade-in ease-in-out 1s both;
-        -o-animation: fade-in ease-in-out 1s both;
-        animation: fade-in 1s ease;
-        visibility: visible;
-        -webkit-backface-visibility: hidden;
-        margin: 0 auto;
-        width: 75%; 
-    }
-    /*Contato*/
-    #contato{
-        background-color: #fff;
-    }
-    .social{
-        padding: 0;
-    }
-    .social li{
-        list-style: none;
-        padding-top: 15px;
-    }
-    footer{
-        background-color: #000;
-        height: 20px;
     }
     /*Botão top*/
     .top{
@@ -202,18 +132,8 @@ p, label{
     }
 }
 
-/* Small Devices, Tablets */
+/* Tablets */
 @media only screen and (min-width : 768px) {
-
-}
-
-/* Medium Devices, Desktops */
-@media only screen and (min-width : 992px) {
-
-}
-
-/* Large Devices, Wide Screens */
-@media only screen and (min-width : 1200px) {
     section {
         padding: 50px 0;
         font-size: 1em;
@@ -249,8 +169,164 @@ p, label{
         color: #FF8420;
         transition: all ease-in .5s; 
     }
-    .pull-right{
-        padding: 10px 50px;
+    .redes-sociais{
+        position: static;
+        margin-top: -40px;
+        float: right;
+    }
+    h2{
+        margin: 30px;
+        font-weight: 700;
+        letter-spacing: 1px;
+    }
+    /*Jumbotron*/
+    .jumbotron{
+        margin: 0;
+        padding: 100px 0 50px 0;
+        background: transparent;
+        color: #fff; 
+    }
+    .jumbotron p{
+        color: #fff;
+        margin: 0 30px;
+        padding: 5px 0;
+        font-size: 1em; 
+    }
+    /*Post-it*/
+    #post-it{
+        margin-top: 5%; 
+        padding: 15px;        
+        width: 300px;
+        height: 230px;
+        -moz-transform: rotate(7deg);
+        -webkit-transform: rotate(7deg);
+        -o-transform: rotate(7deg);
+        -ms-transform: rotate(7deg);
+        transform: rotate(7deg);
+        box-shadow: 0px 4px 6px #333;
+        -moz-box-shadow: 0px 4px 6px #333;
+        -webkit-box-shadow: 0px 4px 6px #333; 
+    }
+    p.mindset{
+        margin-left: 0;
+        font-size: 15px;
+        color: #000;
+        line-height: 1.5em;
+    }
+    #contato{
+        color: #fff;
+        margin: 0 30px;
+    }
+    #contato .btn-success{
+        margin: 15px 0;
+    }
+    /*Portfólio*/
+    #portfolio{
+        background: #0b609c;
+        background-image: 
+        -webkit-linear-gradient(bottom, transparent 0%, transparent 9px, rgba(255, 255, 255, 0.2) 9px, rgba(255, 255, 255, 0.2) 10px, transparent 10px, transparent 19px, rgba(255, 255, 255, 0.1) 19px, rgba(255, 255, 255, 0.1) 20px, transparent 20px, transparent 29px, rgba(255, 255, 255, 0.1) 29px, rgba(255, 255, 255, 0.1) 30px, transparent 30px, transparent 39px, rgba(255, 255, 255, 0.1) 39px, rgba(255, 255, 255, 0.1) 40px, transparent 40px, transparent 49px, rgba(255, 255, 255, 0.1) 49px, rgba(255, 255, 255, 0.1) 50px),
+        -webkit-linear-gradient(left, transparent 0%, transparent 9px, rgba(255, 255, 255, 0.2) 9px, rgba(255, 255, 255, 0.2) 10px, transparent 10px, transparent 19px, rgba(255, 255, 255, 0.1) 19px, rgba(255, 255, 255, 0.1) 20px, transparent 20px, transparent 29px, rgba(255, 255, 255, 0.1) 29px, rgba(255, 255, 255, 0.1) 30px, transparent 30px, transparent 39px, rgba(255, 255, 255, 0.1) 39px, rgba(255, 255, 255, 0.1) 40px, transparent 40px, transparent 49px, rgba(255, 255, 255, 0.1) 49px, rgba(255, 255, 255, 0.1) 50px);
+        background-size: 50px 50px;
+        color: #fff;
+        font-size: 1em;
+    }
+    .logo-case{
+        padding: 10px 0;        
+    }
+    #portfolio h3{
+        text-align: left;
+        margin: 30px 0 0 0;
+    }
+    #portfolio p {
+        margin-bottom: 30px; 
+        text-align: left;
+        vertical-align: middle;
+    }
+    /*slider*/
+    .carousel-control{
+        opacity: 1;
+        width: 5%;
+        font-size: 2em;    
+        padding-top:25%;
+    }
+    .mockup{
+        background-image: url("../img/mockup-pc.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin: 30% auto;
+        width: 50%;
+        height: 500px;        
+    }
+    .case{
+        width: 100%;
+        height: 40%;         
+        margin: 5px auto;
+        padding-top: 10px;
+    }
+    /*Botão top*/
+    .top{
+        position: fixed;
+        bottom: 2em;
+        right: 2em;
+        text-decoration: none;
+        color: #fff;
+        background-color: rgba(0, 0, 0, 0.3);
+        border-radius: 50px;
+        display: none;
+        padding: 1em;
+        height: 45px;
+        width: 45px;
+    }
+    .top span{
+        font-size: 1.2em;
+    }
+    label::after{
+        content: "*";
+        color: #f00;
+    }
+}
+
+/* Desktop */
+@media only screen and (min-width : 992px) {
+    section {
+        padding: 50px 0;
+        font-size: 1em;
+    }
+    .bg {
+        background-image: url("../img/bg.jpg");
+        background-repeat:repeat-x; 
+        background-size: auto;
+    }
+    /*Menu*/
+    .navbar-brand {
+        width: 80%;
+        margin: 0;
+        padding: 0; 
+    }
+    .navbar {
+        background: transparent;
+        border-bottom: none;
+        padding: 10px 0;
+        transition: all ease-in .5s; 
+    }
+    .alterarMenu {
+        background: #fff;
+        transition: all ease-in .5s; 
+    }
+    .nav {
+        color: #fff;
+        font-size: 1.5em;
+        transition: all ease-in .5s;
+        border-bottom: none; 
+    }
+    .navbar-inverse .navbar-nav > li > .menu {
+        color: #FF8420;
+        transition: all ease-in .5s; 
+    }
+    .redes-sociais{
+        position: static;
+        margin-top: -40px;
+        float: right;
     }
     h2{
         margin-left: 30px;
@@ -336,7 +412,7 @@ p, label{
     .case{
         width: 100%;
         height: 60%;
-        margin: 20px auto;
+        margin: 15px auto;
         background-size: auto;
     }
     /*Botão top*/
