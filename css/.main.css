@@ -1,0 +1,446 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Slabo+27px');
+h2,h3{
+    font-family: 'Slabo 27px', serif;
+}
+p, label{
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.8em;
+}
+#form-sucesso{
+    display: none;
+}
+#form-sucesso p{
+    text-align: center;
+    color: #000;
+    font-size: 1.5em;
+}
+/* Phones */ 
+@media only screen and (max-width : 420px){
+    section{
+        padding: 35px 0;
+        font-size: 1em;
+    }
+    .bg{
+        background-image: url("../img/bg.jpg");
+        background-repeat:repeat-y; 
+        background-size: auto;
+    }
+    /*Menu*/
+    .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form{
+        border: none;
+    }    
+    .redes-sociais{       
+        position: static;
+        margin: 5px 15px;
+        padding: 0 15%;
+        display: inline;
+    }    
+    .navbar-brand{
+        width: 100%;
+        margin: 0;
+        padding: 0; 
+    }
+    .navbar{
+        background: #fff;
+        border-bottom: none;
+        padding: 15px 0;
+    }
+    .logo{
+        width: 50%;
+        margin: 0 auto;
+    }
+    /*Jumbotron*/
+    .jumbotron{
+        margin: 70px 0 0 0;
+        background: transparent;
+        color: #fff;
+        height: auto; 
+    }
+    .jumbotron h1{
+        font-size: 2em; 
+    }
+    .jumbotron p{
+        color: #fff;
+        margin: 0;
+        padding: 5px 0;
+        font-size: 1em; 
+    }
+    .jumbotron h2{
+        padding-top: 10px; 
+    }
+    .jumbotron h3{
+        margin: 0;
+        padding-top: 15px; 
+    }
+    /*Post-it*/
+    #post-it{
+        display: none;
+    }
+    #contato{
+        background: transparent;
+        color: #fff;
+    }
+    #contato .btn-success{
+        margin-top: 10px;
+        width: 100%;
+    }
+    /*Portfólio*/
+    #portfolio {
+        background: #08328a;
+        background-image: 
+        -webkit-linear-gradient(bottom, transparent 0%, transparent 9px, rgba(255, 255, 255, 0.2) 9px, rgba(255, 255, 255, 0.2) 10px, transparent 10px, transparent 19px, rgba(255, 255, 255, 0.1) 19px, rgba(255, 255, 255, 0.1) 20px, transparent 20px, transparent 29px, rgba(255, 255, 255, 0.1) 29px, rgba(255, 255, 255, 0.1) 30px, transparent 30px, transparent 39px, rgba(255, 255, 255, 0.1) 39px, rgba(255, 255, 255, 0.1) 40px, transparent 40px, transparent 49px, rgba(255, 255, 255, 0.1) 49px, rgba(255, 255, 255, 0.1) 50px),
+        -webkit-linear-gradient(left, transparent 0%, transparent 9px, rgba(255, 255, 255, 0.2) 9px, rgba(255, 255, 255, 0.2) 10px, transparent 10px, transparent 19px, rgba(255, 255, 255, 0.1) 19px, rgba(255, 255, 255, 0.1) 20px, transparent 20px, transparent 29px, rgba(255, 255, 255, 0.1) 29px, rgba(255, 255, 255, 0.1) 30px, transparent 30px, transparent 39px, rgba(255, 255, 255, 0.1) 39px, rgba(255, 255, 255, 0.1) 40px, transparent 40px, transparent 49px, rgba(255, 255, 255, 0.1) 49px, rgba(255, 255, 255, 0.1) 50px);
+        background-size: 50px 50px;
+        color: #fff;
+    }
+    #portfolio h2, #portfolio h3, #portfolio p {
+        margin: 15px 10px;
+    }
+    /*slider*/
+    .carousel-control{
+        opacity: 1;
+        font-size: 2em;        
+        padding-top:100%;
+    }
+    .mockup, .case{
+        display: none;        
+    }
+    .logo-case{
+        padding: 5% 30%;
+    } 
+    .btn-info{
+        margin-bottom: 50px;
+        width: 100%;
+    }
+    /*Botão top*/
+    .top{
+        position: fixed;
+        bottom: 2em;
+        right: 2em;
+        text-decoration: none;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.3);
+        border-radius: 50px;
+        display: none;
+        padding: 1em;
+        height: 45px;
+        width: 45px;
+    }
+    .top span{
+        font-size: 1.2em;
+    }
+    label::after{
+        content: "*";
+        color: #f00;
+    }
+    a[data-toggle="tooltip"]{
+        text-decoration: none;
+    }
+}
+/* Tablets */
+@media only screen and (min-width : 768px){
+    section {
+        padding: 50px 0;
+        font-size: 1em;
+    }
+    .bg {
+        background-image: url("../img/bg.jpg");
+        background-repeat:repeat-x; 
+        background-size: auto;
+    }
+    /*Menu*/
+    .navbar-brand {
+        width: 80%;
+        margin: 0;
+        padding: 0; 
+    }
+    .navbar {
+        background: transparent;
+        border-bottom: none;
+        padding: 10px 0;
+        transition: all ease-in .5s; 
+    }
+    .alterarMenu {
+        background: #fff;
+        transition: all ease-in .5s; 
+    }
+    .nav {
+        color: #fff;
+        font-size: 1.5em;
+        transition: all ease-in .5s;
+        border-bottom: none; 
+    }
+    .navbar-inverse .navbar-nav > li > .menu {
+        color: #FF8420;
+        transition: all ease-in .5s; 
+    }
+    .redes-sociais{
+        position: static;
+        margin-top: -40px;
+        float: right;
+    }
+    h2{
+        margin: 30px;
+        font-weight: 700;
+        letter-spacing: 1px;
+    }
+    /*Jumbotron*/
+    .jumbotron{
+        margin: 0;
+        padding: 100px 0 50px 0;
+        background: transparent;
+        color: #fff; 
+    }
+    .jumbotron p{
+        color: #fff;
+        margin: 0 30px;
+        padding: 5px 0;
+        font-size: 1em; 
+    }
+    /*Post-it*/
+    #post-it{
+        margin-top: 5%; 
+        padding: 15px;        
+        width: 300px;
+        height: 230px;
+        -moz-transform: rotate(7deg);
+        -webkit-transform: rotate(7deg);
+        -o-transform: rotate(7deg);
+        -ms-transform: rotate(7deg);
+        transform: rotate(7deg);
+        box-shadow: 0px 4px 6px #333;
+        -moz-box-shadow: 0px 4px 6px #333;
+        -webkit-box-shadow: 0px 4px 6px #333; 
+    }
+    p.mindset{
+        margin-left: 0;
+        font-size: 15px;
+        color: #000;
+        line-height: 1.5em;
+    }
+    #contato{
+        color: #fff;
+        margin: 0 30px;
+    }
+    #contato .btn-success{
+        margin: 15px 0;
+    }
+    /*Portfólio*/
+    #portfolio{
+        background: #0b609c;
+        background-image: 
+        -webkit-linear-gradient(bottom, transparent 0%, transparent 9px, rgba(255, 255, 255, 0.2) 9px, rgba(255, 255, 255, 0.2) 10px, transparent 10px, transparent 19px, rgba(255, 255, 255, 0.1) 19px, rgba(255, 255, 255, 0.1) 20px, transparent 20px, transparent 29px, rgba(255, 255, 255, 0.1) 29px, rgba(255, 255, 255, 0.1) 30px, transparent 30px, transparent 39px, rgba(255, 255, 255, 0.1) 39px, rgba(255, 255, 255, 0.1) 40px, transparent 40px, transparent 49px, rgba(255, 255, 255, 0.1) 49px, rgba(255, 255, 255, 0.1) 50px),
+        -webkit-linear-gradient(left, transparent 0%, transparent 9px, rgba(255, 255, 255, 0.2) 9px, rgba(255, 255, 255, 0.2) 10px, transparent 10px, transparent 19px, rgba(255, 255, 255, 0.1) 19px, rgba(255, 255, 255, 0.1) 20px, transparent 20px, transparent 29px, rgba(255, 255, 255, 0.1) 29px, rgba(255, 255, 255, 0.1) 30px, transparent 30px, transparent 39px, rgba(255, 255, 255, 0.1) 39px, rgba(255, 255, 255, 0.1) 40px, transparent 40px, transparent 49px, rgba(255, 255, 255, 0.1) 49px, rgba(255, 255, 255, 0.1) 50px);
+        background-size: 50px 50px;
+        color: #fff;
+        font-size: 1em;
+    }
+    .logo-case{
+        padding: 10px 0;        
+    }
+    #portfolio h3{
+        text-align: left;
+        margin: 30px 0 0 0;
+    }
+    #portfolio p {
+        margin-bottom: 30px; 
+        text-align: left;
+        vertical-align: middle;
+    }
+    /*slider*/
+    .carousel-control{
+        opacity: 1;
+        width: 5%;
+        font-size: 2em;    
+        padding-top:25%;
+    }
+    .mockup{
+        background-image: url("../img/mockup-pc.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin: 30% auto;
+        width: 50%;
+        height: 500px;        
+    }
+    .case{
+        width: 100%;
+        height: 40%;         
+        margin: 5px auto;
+        padding-top: 10px;
+    }
+    /*Botão top*/
+    .top{
+        position: fixed;
+        bottom: 2em;
+        right: 2em;
+        text-decoration: none;
+        color: #fff;
+        background-color: rgba(0, 0, 0, 0.3);
+        border-radius: 50px;
+        display: none;
+        padding: 1em;
+        height: 45px;
+        width: 45px;
+    }
+    .top span{
+        font-size: 1.2em;
+    }
+    label::after{
+        content: "*";
+        color: #f00;
+    }
+}
+
+/* Desktop */
+@media only screen and (min-width : 992px){
+    section {
+        padding: 50px 0;
+        font-size: 1em;
+    }
+    .bg {
+        background-image: url("../img/bg.jpg");
+        background-repeat:repeat-x; 
+        background-size: auto;
+    }
+    /*Menu*/
+    .navbar-brand {
+        width: 80%;
+        margin: 0;
+        padding: 0; 
+    }
+    .navbar {
+        background: transparent;
+        border-bottom: none;
+        padding: 10px 0;
+        transition: all ease-in .5s; 
+    }
+    .alterarMenu {
+        background: #fff;
+        transition: all ease-in .5s; 
+    }
+    .nav {
+        color: #fff;
+        font-size: 1.5em;
+        transition: all ease-in .5s;
+        border-bottom: none; 
+    }
+    .navbar-inverse .navbar-nav > li > .menu {
+        color: #FF8420;
+        transition: all ease-in .5s; 
+    }
+    .redes-sociais{
+        position: static;
+        margin-top: -40px;
+        float: right;
+    }
+    h2{
+        margin-left: 30px;
+        font-weight: 700;
+        letter-spacing: 1px;
+    }
+    /*Jumbotron*/
+    .jumbotron{
+        margin: 0;
+        padding: 100px 0 50px 0;
+        background: transparent;
+        color: #fff; 
+    }
+    .jumbotron p{
+        color: #fff;
+        margin-left: 30px;
+        padding: 5px 0;
+        font-size: 1em; 
+    }
+    /*Post-it*/
+    #post-it{
+        padding: 15px;        
+        width: 300px;
+        height: 230px;
+        -moz-transform: rotate(7deg);
+        -webkit-transform: rotate(7deg);
+        -o-transform: rotate(7deg);
+        -ms-transform: rotate(7deg);
+        transform: rotate(7deg);
+        box-shadow: 0px 4px 6px #333;
+        -moz-box-shadow: 0px 4px 6px #333;
+        -webkit-box-shadow: 0px 4px 6px #333; 
+    }
+    p.mindset{
+        margin-left: 0;
+        font-size: 15px;
+        color: #000;
+    }
+    #contato{
+        color: #fff;
+        margin-left: 30px;
+    }
+    #contato .btn-success{
+        margin-top: 30px;
+    }
+    /*Portfólio*/
+    #portfolio{
+        background: #0b609c;
+        background-image: 
+        -webkit-linear-gradient(bottom, transparent 0%, transparent 9px, rgba(255, 255, 255, 0.2) 9px, rgba(255, 255, 255, 0.2) 10px, transparent 10px, transparent 19px, rgba(255, 255, 255, 0.1) 19px, rgba(255, 255, 255, 0.1) 20px, transparent 20px, transparent 29px, rgba(255, 255, 255, 0.1) 29px, rgba(255, 255, 255, 0.1) 30px, transparent 30px, transparent 39px, rgba(255, 255, 255, 0.1) 39px, rgba(255, 255, 255, 0.1) 40px, transparent 40px, transparent 49px, rgba(255, 255, 255, 0.1) 49px, rgba(255, 255, 255, 0.1) 50px),
+        -webkit-linear-gradient(left, transparent 0%, transparent 9px, rgba(255, 255, 255, 0.2) 9px, rgba(255, 255, 255, 0.2) 10px, transparent 10px, transparent 19px, rgba(255, 255, 255, 0.1) 19px, rgba(255, 255, 255, 0.1) 20px, transparent 20px, transparent 29px, rgba(255, 255, 255, 0.1) 29px, rgba(255, 255, 255, 0.1) 30px, transparent 30px, transparent 39px, rgba(255, 255, 255, 0.1) 39px, rgba(255, 255, 255, 0.1) 40px, transparent 40px, transparent 49px, rgba(255, 255, 255, 0.1) 49px, rgba(255, 255, 255, 0.1) 50px);
+        background-size: 50px 50px;
+        color: #fff;
+        font-size: 1em;
+        height: 800px;
+    }
+    .logo-case{
+        padding: 30px 0;        
+    }
+    #portfolio h3{
+        text-align: left;
+        margin: 30px 0 0 0;
+    }
+    #portfolio p {
+        margin-bottom: 30px; 
+        text-align: left;
+        vertical-align: middle;
+    }
+    /*slider*/
+    .carousel-control{
+        opacity: 1;
+        width: 5%;
+        font-size: 3em;    
+        padding-top:25%;
+    }
+    .mockup{
+        background-image: url("../img/mockup-pc.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 500px;
+        margin: 0 auto;
+    }
+    .case{
+        width: 100%;
+        height: 60%;
+        margin: 15px auto;
+        background-size: auto;
+    }
+    /*Botão top*/
+    .top{
+        position: fixed;
+        bottom: 2em;
+        right: 2em;
+        text-decoration: none;
+        color: #fff;
+        background-color: rgba(0, 0, 0, 0.3);
+        border-radius: 50px;
+        display: none;
+        padding: 1em;
+        height: 45px;
+        width: 45px;
+    }
+    .top span{
+        font-size: 1.2em;
+    }
+    label::after{
+        content: "*";
+        color: #f00;
+    }
+}
